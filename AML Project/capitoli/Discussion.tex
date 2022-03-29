@@ -1,0 +1,17 @@
+\section{Discussione}
+%\textit{The discussion section aims at interpreting the results in light of the project's objectives. The most important goal of this section is to interpret the results so that the reader is informed of the insight or answers that the results provide. This section should also present an evaluation of the particular approach taken by the group. For example: Based on the results, how could the experimental procedure be improved? What additional, future work may be warranted? What recommendations can be drawn?}
+
+Dai risultati riportati nella Tabella \ref{table:l2m} è possibile effettuare un'analisi più approfondita dei 3 modelli selezionati: \textit{L2}, \textit{L2 ES} e \textit{L2 ES CW}.
+I risultati del modello \textit{L2} ottenuti sul validation set indicano che la rete riconosce molto bene la classe 3, data la maggior quantità di dati utilizzati nell'addestramento (maggior supporto), mentre fatica a riconoscere le restanti classi. 
+In particolare viene mal predetta la classe 2 per cui si ha una recall particolarmente bassa (pari a 0.36). 
+In generale però, ad eccezione della classe 2, la precision tende ad avere valori più bassi della recall. 
+Nelle misure di performance sul test set è possibile notare risultati molto simili se non leggermente migliori rispetto a quelli ottenuti sul validation set.
+La \textit{test accuracy} risulta pressoché identica mentre la \textit{test loss} risulta leggermente peggiorata. 
+In generale entrambe le misure risultano essere buone ma non ottimali.
+I risultati del modello \textit{L2 ES} risultano essere i migliori ottenuti.
+\textit{validation loss} e \textit{validation accuracy} riportano valori migliori rispetto a quelli ottenuti con il modello L2, anche se non ancora ottimali (accuratezza del 76\%). 
+In questo caso la classe predetta in maniera peggiore risulta essere la classe 0 (precision pari a 0.32), ma si ottengono nuovamente scarsi risultati anche sulla classe 2. L'unica classe predetta ottimamente è la 3, sempre grazie al grande supporto.
+Sul test set i risultati ottenuti sono molto simili ma leggermente peggiori. In definitiva si può comunque affermare che questo sia il modello migliore con una \textit{test accuracy} del 73\% e un \textit{test loss} di 1.20. 
+I risultati del modello \textit{L2 ES CW} per validation e test set sono simili ai precedenti modelli. Benché la classe 3 sia sempre quella predetta meglio e la 2 quella con i peggior risultati, si riscontra in questo caso un generale miglioramento nella predizione delle singole classi (valori maggiori di f1-score). Ciò è dovuto all'azione di \textit{CW}, che pur non incidendo moltissimo, contribuisce almeno in parte a questo miglioramento.
+Inoltre, con questo modello otteniamo i valori più alti per l'\textit{accuracy} sia di validation che di test set (rispettivamente 77\% e 75\%).
+I valori di \textit{loss} sia per validation che per test set risultano invece molto simili a quelli del modello \textit{L2} e quindi peggiori di quelli di \textit{L2 ES}.
