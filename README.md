@@ -1,8 +1,9 @@
 # AML-Project
-Project of Advance Machine Learning (UniMiB)
+Progetto di Advance Machine Learning (UniMiB)
 
-Alice Romagnoli - 829833
+L'obiettivo del progetto è quello di predire quali famiglie tra quelle descritte nel dataset hanno maggiormente bisogno di assistenza economica e sociale.
 
-Artemisia Sarteschi - 829677 
 
-Andrea Infantino - 816786 
+- Alice Romagnoli - 829833
+- Artemisia Sarteschi - 829677 
+- Andrea Infantino - 816786 
